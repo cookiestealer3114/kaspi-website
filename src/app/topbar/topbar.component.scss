@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  cursor: default;
+  margin: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.item__heading,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+span {
+  background: url(../assets/bg_for_divs_kaspi.gif);
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.link,
+a {
+  color: #0089d0;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  width: 285px;
+  margin: 0 7px 0 0;
+}
+.topbar li,
+.topbar_nav_link {
+  list-style-type: none;
+}
+.mount_topbar {
+}
+.topbar {
+  background-color: #fff;
+  width: 100%;
+  font-size: 17px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  border: 0;
+}
+.topbar_wrapper {
+  min-width: 960px;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 75px;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.topbar_logo {
+}
+.kaspi_logo {
+}
+.topbar_nav {
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+  margin-left: -75px;
+}
+.topbar_nav_link {
+  margin-right: 64px;
+  color: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+.topbar_empty-right {
+}

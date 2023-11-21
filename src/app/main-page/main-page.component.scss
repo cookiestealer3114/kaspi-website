@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  cursor: default;
+  margin: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.item__heading,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+span {
+  background: url(../assets/bg_for_divs_kaspi.gif);
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.link,
+a {
+  color: #0089d0;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  width: 285px;
+  margin: 0 7px 0 0;
+}
+
+.main_slider {
+  position: relative;
+  overflow: hidden;
+  min-width: 960px;
+  height: 360px;
+  margin-bottom: 35px;
+  opacity: 1 !important;
+}
+
+.swiper_wrapper {
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+.swiper_slide {
+  background-position: center;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.swiper_slide,
+.swiper_wrapper {
+  transform: translate3d(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+.swiper_slide img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  object-fit: contain;
+}
+.main_slider_slide_link {
+  display: block;
+  width: 1400px;
+  height: 360px;
+  margin: auto;
+  color: #000;
+}

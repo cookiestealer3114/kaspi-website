@@ -1,0 +1,248 @@
+html {
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  cursor: default;
+  margin: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.item__heading,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+span {
+  background: url(../assets/bg_for_divs_kaspi.gif);
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.link,
+a {
+  color: #0089d0;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  width: 285px;
+  margin: 0 7px 0 0;
+}
+
+.header .search,
+.header .search_bar {
+  float: left;
+  padding-top: 5px;
+  margin-right: 28px;
+}
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header .current_location {
+  margin-right: 0;
+  float: left;
+  padding-top: 4px;
+}
+.header_inner {
+  width: 960px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 0;
+  position: relative;
+}
+.header_inner::after,
+.header_inner::before {
+  display: table;
+  content: " ";
+}
+.header_inner::after {
+  clear: both;
+}
+.search_bar_logo,
+.search_bar_wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+.search_bar_logo {
+  width: 100px;
+  height: 33px;
+  // в оригинале стоит "height: 35px", но это делает кнопку большой, из-за чего она вылезает за пределы поискового окна
+  line-height: 32px;
+  text-align: center;
+  color: #0089d0;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background: #f5f5f5;
+}
+.search_bar_wrapper {
+  position: relative;
+}
+.search_bar_input {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  height: 33px !important;
+  width: 468px !important;
+  background: #fbfbfb;
+  border-radius: 0 !important;
+  padding: 0 20px 0 10px !important;
+}
+.search_bar_input:hover {
+  border-color: #0089d0;
+  transition: 100ms ease-in;
+}
+.search_bar_input:focus {
+  outline: 0;
+  transition: 100ms ease-in;
+}
+.search_bar_submit {
+  margin-bottom: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.button {
+  vertical-align: middle;
+  display: inline-block;
+  height: 35px;
+  padding: 0px 21px;
+  // должен стоять "padding: 7px 21px", но это делает кнопку слишком большой
+  font-size: 14px;
+  line-height: 21px;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  background: #0089d0;
+  white-space: nowrap;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: 0.01s;
+  color: #fff;
+}
+button,
+input {
+  vertical-align: baseline;
+  line-height: normal;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  appearance: button;
+}
+.icon._small._search {
+  background-image: url(../assets/small-search.png);
+  width: 18px;
+  height: 17px;
+}
+.icon._small {
+  width: 16px;
+  height: 16px;
+  background: no-repeat top left;
+}
+.icon {
+  font-family: ks-ico_w1b9ef;
+  content: "\e000";
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  width: 100%;
+  appearance: none;
+  vertical-align: middle;
+  height: 35px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.header .current_location {
+  margin-right: 0;
+  float: left;
+  padding-top: 4px;
+}
+.current_location,
+.current_location:hover {
+  text-decoration: none;
+}
+.current1_location {
+  position: relative;
+  color: #000;
+  cursor: default;
+}
+.current_location_city {
+  color: #0089d0;
+  border-bottom: 1px dashed #0089d0;
+  cursor: pointer;
+}
