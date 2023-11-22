@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './topbar.component.html',
-  styleUrl: './topbar.component.scss'
+  styleUrls: ['./topbar.component.scss'],
 })
-export class TopbarComponent {
-
-}
+export class TopbarComponent {}
